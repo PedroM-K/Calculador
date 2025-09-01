@@ -3,17 +3,24 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #2e2e2e;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1d1f27, #3a3f51);
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
 }
 
 .calculator {
-  background: #1c1c1c;
+  background: #2a2e3a;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #000;
-  width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  width: 350px;
+  text-align: center;
+}
+
+.calculator h2 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 400;
 }
 
 #display {
@@ -22,10 +29,12 @@ body {
   font-size: 24px;
   margin-bottom: 15px;
   text-align: right;
-  padding: 5px 10px;
-  border-radius: 6px;
+  padding: 10px;
+  border-radius: 8px;
   border: none;
-  background: #fff;
+  background: #f8f8f8;
+  color: #000;
+  box-sizing: border-box;
 }
 
 .buttons {
@@ -34,17 +43,24 @@ body {
   gap: 10px;
 }
 
+/* Botões padrão */
 button {
   padding: 15px;
   font-size: 18px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  background: #3e3e3e;
+  background: #444b5c;
   color: #fff;
-  transition: background 0.2s;
+  transition: 0.2s;
 }
 
-button:hover {
-  background: #575757;
-}
+button:hover { background: #5c6375; }
+
+/* Categorias */
+button.op { background: #f39c12; }
+button.func { background: #c0392b; }
+button.sci { background: #2980b9; }
+button.const { background: #16a085; }
+button.equal { background: #27ae60; }
+button.equal:hover { background: #2ecc71; }
